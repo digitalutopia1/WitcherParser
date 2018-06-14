@@ -45,31 +45,31 @@ W3Ent::W3Ent(const char* fn)
 		}
 		else if (dataTypeName == "CMaterialInstance")
 		{
-			std::cout << "CMaterialInstance" << std::endl;
+			W3_CMaterialInstance(fh, infos);
 		}
 		else if (dataTypeName == "CEntityTemplate")
 		{
-			std::cout << "CEntityTemplate" << std::endl;
+			W3_CEntityTemplate(fh, infos);
 		}
 		else if (dataTypeName == "CEntity")
 		{
-			std::cout << "CEntity" << std::endl;
+			W3_CEntity(fh, infos);
 		}
 		else if (dataTypeName == "CMeshComponent")
 		{
-			std::cout << "CMeshComponent" << std::endl;
+			W3_CMeshComponent(fh, infos);
 		}
 		else if (dataTypeName == "CSkeleton")
 		{
-			std::cout << "CSkeleton" << std::endl;
+			W3_CSkeleton(fh, infos);
 		}
 		else if (dataTypeName == "CAnimationBufferBitwiseCompressed")
 		{
-			std::cout << "CAnimationBufferBitwiseCompressed" << std::endl;
+			W3_CAnimationBufferBitwiseCompressed(fh, infos);
 		}
 		else
 		{
-			std::cout << "W3_CUnknown" << std::endl;
+			W3_CUnknown(fh, infos);
 		}
 
 		fseek(fh, back, SEEK_SET);

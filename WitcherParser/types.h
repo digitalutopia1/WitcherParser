@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 struct W3_DataInfos
 {
 public:
@@ -14,4 +15,11 @@ public:
 	std::string propType;
 	int propSize;
 	unsigned int endPos;
+};
+
+class SMaterial
+{
+public:
+	SMaterial();
+	~SMaterial() {}
 };
